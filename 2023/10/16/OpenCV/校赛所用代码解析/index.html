@@ -30,7 +30,7 @@
 <meta property="og:description" content="校赛视觉代码  cap.read&#x2F;&#x2F;图像读取    cvtColor（InputArray src，outputArray dst，int code，int dstCn&#x3D;0）&#x2F;&#x2F;图像空间转换 ![](https:&#x2F;&#x2F;img2020.cnblogs.com&#x2F;blog&#x2F;922321&#x2F;202112&#x2F;922321-20211211092943135-1639333672.png)      inRange">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-16T13:36:37.975Z">
-<meta property="article:modified_time" content="2023-10-17T11:23:56.199Z">
+<meta property="article:modified_time" content="2023-10-17T13:08:45.277Z">
 <meta property="article:author" content="Very_Young">
 <meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary">
@@ -239,7 +239,7 @@
 <li><pre><code> dilate( InputArray src, OutputArray dst, InputArray kernel,
                        Point anchor = Point(-1,-1), int iterations = 1,
                        int borderType = BORDER_CONSTANT,
-                       const Scalar&amp; borderValue = morphologyDefaultBorderValue() );
+                       const Scalar&amp; borderValue = morphologyDefaultBorderValue() );//膨胀
 </code></pre>
 </li>
 </ol>
@@ -248,7 +248,7 @@
 </li>
 <li><p><code>dst</code>:输出图像；</p>
 </li>
-<li><p><code>kerne</code>l:膨胀核元素;</p>
+<li><p><code>kernel</code>:膨胀核元素;</p>
 </li>
 <li><p><code>anchor = Point(-1,-1)</code>:膨胀锚点位置，(-1,-1)是默认在中心位置；</p>
 </li>
@@ -260,7 +260,7 @@
 <ol start="8">
 <li><pre><code> findContours( InputArray image, OutputArrayOfArrays contours,
                            OutputArray hierarchy, int mode,
-                           int method, Point offset = Point());
+                           int method, Point offset = Point());//寻找轮廓
 </code></pre>
 </li>
 </ol>
